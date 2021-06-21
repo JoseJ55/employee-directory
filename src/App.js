@@ -1,24 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React, {useState} from "react";
+import {BrowserRouter, Route} from "react-router-dom"
+import Home from "./pages/Home";
+import Details from "./pages/Details";
 
 function App() {
+  const [employees, setEmployees] = useState([
+    {id: 1, name: "John", Phone: "618-239-5346"},
+    {id: 2, name: "Eric", Phone: "728-534-6543"}
+  ])
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <div>
+        <Route exact path="/">
+          <Home employees={employees}/>
+        </Route>
+        <Route exact path="/details" >
+          <Details/>  
+        </Route>
+      </div>
+    </BrowserRouter>
   );
 }
 
