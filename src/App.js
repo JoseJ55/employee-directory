@@ -4,6 +4,10 @@ import Home from "./pages/Home";
 import Details from "./pages/Details";
 import userData from "./utils/API";
 
+function sorting(value){
+ /********************** */ 
+}
+
 function App() { // want to add functionallity to buttons
   const [employees, setEmployees] = useState([])
 
