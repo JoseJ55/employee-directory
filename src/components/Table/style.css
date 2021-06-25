@@ -12,7 +12,7 @@ body{
 }
 
 .row {
-    width: 80%;
+    width: 90%;
     margin: auto;
     list-style: none;
     display: flex;
@@ -25,8 +25,14 @@ body{
     text-align: center;
 }
 
+.gender{
+    padding: 1vh 1vw;
+    width: 10%;
+    border-left: grey .1rem solid;
+}
+
 .name {
-    width:33%;
+    width:20%;
     padding: 1vh 1vw;
     text-align: center;
     border-left: grey .1rem solid;
@@ -34,7 +40,23 @@ body{
 }
 
 .phone {
-    width:43%;
+    width:15%;
     padding: 1vh 1vw;
     text-align: center;
+    border-right: grey .1rem solid;
+}
+
+.email{
+    width: 20%;
+    padding: 1vh 1vw;
+    text-align: center;
+    border-right: grey .1rem solid;
+    flex-wrap: wrap;
+}
+
+.photo{
+    width: 15%;
+}
+.photo img{
+    width: 100%;
 }

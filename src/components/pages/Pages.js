@@ -1,11 +1,11 @@
 import React from "react";
 import "./style.css";
 
-function Pages(){
+function Pages({prevPage, nextPage}){
     return (
         <div className="buttons">
-            <button className="prevBtn">Prev</button>
-            <button className="nextBtn">Next</button>
+            <button onClick={prevPage} className="prevBtn">Prev</button>
+            <button onClick={nextPage} className="nextBtn">Next</button>
         </div>
     )
 }
