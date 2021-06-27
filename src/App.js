@@ -4,12 +4,13 @@ import Home from "./pages/Home";
 import Details from "./pages/Details";
 import userData from "./utils/API";
 
-function sorting(value){
- /********************** */ 
-}
+// function sorting(value){
+//  /********************** */ 
+// }
 
 function App() { // want to add functionallity to buttons
   const [employees, setEmployees] = useState([])
+  const [sort, setSort] = useState([])
 
   useEffect(() => {
     userData().then(res => {
@@ -25,13 +26,13 @@ function App() { // want to add functionallity to buttons
     })
   }, [])
 
-  console.log(employees)
+  // console.log(employees)
 
   return (
     <BrowserRouter>
       <div>
         <Route exact path="/">
-          <Home employees={employees}/>
+          <Home employees={employees} sort={sort}/>
         </Route>
         <Route exact path="/details" >
           <Details/>  

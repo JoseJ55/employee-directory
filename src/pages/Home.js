@@ -1,16 +1,25 @@
 import React from "react";
-import Table from "../components/Table/Table";
-import Pages from "../components/pages/Pages";
+// import Pages from "../components/pages/Pages";
 import Sort from "../components/sort/Sort"
 
-function Home({employees}){
+function Home({employees, sort}){
+    // const employeeData = []
+        
+    // employees.map((employee) => (
+    //     employeeData.push(employee)
+    // ))
+
+    // console.log(employeeData.sort(compare))
+
+
     return (
         <div>
-            <Sort />
-            {employees.map((employee) => (
-                <Table employee={employee}/>
-            ))}
-            <Pages />
+            <Sort employees={employees}/>
+
+            {/* {employees.map((employee) => ( */}
+            {/* <Table employee={employeeData}/> */}
+            {/* // ))} */}
+            {/* <Pages /> */}
         </div>
     )
 }
