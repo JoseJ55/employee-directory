@@ -1,12 +1,28 @@
 # Employee Directory
 
 ## Description
-A program that shows all employees and their public information from a database. The program uses an api to get fake information on fake employees and then build a table to neatly show and display the information of the employee. Once finish the program will have pages of employees and if click on a bit more information can be showen in another page. The user will also be able to sort by columns on the table and filter emplyees by name. The program is deployed with Heroku and should be seen by anyone.
+A web apllication that gathers data from a database and orginizes the data to
+show only imformation that is important or isn't private. The application uses
+react to place the information in a table so user are able to read and go
+thorugh the data easily. The table can also be filtered in any way the user
+wants through name, id, phone and more. Currently, the database needs to have
+certian information to orginize the user in the table. The application also uses
+axios to get data from an api or a backend servers.
 
-## Tech
-The program was made with node.js, react.js, html, css, and axios.
+## Usage
+A user will need to either use ssh key to copy directory or go to the website 
+https://powerful-ocean-41705.herokuapp.com/ to view the application. If user use
+ssh key they will need to use "npm install" on the terminal to install all dependencies for the
+application. After that, the user will need to enter "npm start" to start the
+application on the terminal. Once on the webpage, the application will retrive
+data from randomuser.me which will then filter the data and only render the
+information that is needed. The user is able to sort the data through the id,
+name, email, and phone number.
+
+# Images
+![employee directory home page](https://github.com/JoseJ55/employee-directory/blob/main/public/images/employeeDir.png?raw=true)
 
 ## Links
-https://powerful-ocean-41705.herokuapp.com/
+https://powerful-ocean-41705.herokuapp.com/ (Currently not working)
 
 https://github.com/JoseJ55/employee-directory
