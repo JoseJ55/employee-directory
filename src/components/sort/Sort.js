@@ -1,6 +1,8 @@
 import React from "react";
 import "./style.css";
-import Table from "../Table/Table"
+
+import Table from "../Table/Table";
+import Titles from "../Titles/Titles";
 
 function Sort({employees, compare, sorting}) {
     return (
@@ -14,7 +16,8 @@ function Sort({employees, compare, sorting}) {
                 <option value="phone">Phone number</option>
                 <option value="email">Email</option>
             </select>
-
+            
+            <Titles />
             {employees.sort(compare).map((employee) => (
                 <Table employee={employee}/>
             ))}

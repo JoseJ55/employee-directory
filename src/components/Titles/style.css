@@ -1,0 +1,46 @@
+#titles {
+    width: 90%;
+    margin: auto;
+    margin-top: 2vh;
+}
+
+#titles ul {
+    display: flex;
+    list-style: none;
+    border: grey .1rem solid;
+}
+
+#titles li {
+    justify-content: center;
+    text-align: center;
+    padding: 1vh 0;
+}
+
+#titleId {
+    width: 20%;
+}
+
+#titleGender {
+    width: 11%;
+    border-left: grey .1rem solid;
+    border-right: grey .1rem solid;
+}
+
+#titleName {
+    width: 20%;
+}
+
+#titlePhone {
+    width: 15%;
+    border-left: grey .1rem solid;
+    border-right: grey .1rem solid;
+}
+
+#titleEmail {
+    width: 20%;
+}
+
+#titlePhoto {
+    width: 12%;
+    border-left: grey .1rem solid;
+}
